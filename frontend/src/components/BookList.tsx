@@ -21,11 +21,31 @@ function BookList() {
 
   const totalPages = Math.max(1, Math.ceil(totalCount / pageSize));
 
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
-    fetchBooks(currentPage, pageSize, selectedCategory || undefined, sortBy).then((data) => {
-      setBooks(data.books);
-      setTotalCount(data.totalCount);
-    });
+    let cancelled = false;
+    setLoading(true);
+
+    const load = async (retries = 2) => {
+      try {
+        const data = await fetchBooks(currentPage, pageSize, selectedCategory || undefined, sortBy);
+        if (!cancelled) {
+          setBooks(data.books);
+          setTotalCount(data.totalCount);
+          setLoading(false);
+        }
+      } catch {
+        if (retries > 0 && !cancelled) {
+          setTimeout(() => load(retries - 1), 1000);
+        } else if (!cancelled) {
+          setLoading(false);
+        }
+      }
+    };
+
+    load();
+    return () => { cancelled = true; };
   }, [currentPage, pageSize, selectedCategory, sortBy]);
 
   // Save current location for "Continue Shopping"
@@ -76,6 +96,13 @@ function BookList() {
             </select>
           </div>
 
+          {loading ? (
+            <div className="text-center py-5">
+              <div className="spinner-border text-primary" role="status">
+                <span className="visually-hidden">Loading...</span>
+              </div>
+            </div>
+          ) : (
           <div className="row row-cols-1 g-3">
             {books.map((book) => (
               <div key={book.bookId} className="col">
@@ -109,6 +136,7 @@ function BookList() {
               </div>
             ))}
           </div>
+          )}
 
           <Pagination
             currentPage={currentPage}
