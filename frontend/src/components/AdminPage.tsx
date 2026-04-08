@@ -8,6 +8,8 @@ function AdminPage() {
   const [editingBook, setEditingBook] = useState<Book | null>(null);
   const [showAddForm, setShowAddForm] = useState(false);
 
+  useEffect(() => { document.title = 'Admin | Bookstore'; }, []);
+
   function loadBooks() {
     fetchBooks(1, 100).then((data) => setBooks(data.books));
   }

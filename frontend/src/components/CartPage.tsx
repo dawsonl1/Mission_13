@@ -1,9 +1,12 @@
+import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
 
 function CartPage() {
   const { items, removeFromCart, updateQuantity, totalPrice, clearCart } = useCart();
   const navigate = useNavigate();
+
+  useEffect(() => { document.title = 'Cart | Bookstore'; }, []);
 
   function handleContinueShopping() {
     const lastUrl = sessionStorage.getItem('lastBookListUrl') || '';

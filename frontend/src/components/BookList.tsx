@@ -23,6 +23,8 @@ function BookList() {
 
   const [loading, setLoading] = useState(true);
 
+  useEffect(() => { document.title = 'Books | Bookstore'; }, []);
+
   useEffect(() => {
     let cancelled = false;
     setLoading(true);
