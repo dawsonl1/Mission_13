@@ -15,6 +15,9 @@ public class BookstoreController : ControllerBase
         _context = context;
     }
 
+    [HttpGet("/api/health")]
+    public IActionResult Health() => Ok(new { Status = "Healthy" });
+
     [HttpGet("books")]
     public async Task<IActionResult> GetBooks(
         int pageNum = 1,

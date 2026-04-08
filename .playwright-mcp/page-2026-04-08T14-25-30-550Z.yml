@@ -1,0 +1,53 @@
+- generic [ref=e2]:
+  - navigation [ref=e3]:
+    - generic [ref=e4]:
+      - link "Bookstore" [ref=e5] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e6]:
+        - link "Books" [ref=e7] [cursor=pointer]:
+          - /url: /
+        - link "Admin" [ref=e8] [cursor=pointer]:
+          - /url: /adminbooks
+      - link "Cart 1" [ref=e9] [cursor=pointer]:
+        - /url: /cart
+        - text: Cart
+        - generic [ref=e10]: "1"
+  - generic [ref=e12]:
+    - generic [ref=e13]:
+      - heading "Categories" [level=5] [ref=e14]
+      - button "All Categories" [ref=e16] [cursor=pointer]
+    - generic [ref=e17]:
+      - generic [ref=e18]:
+        - heading "Books (0)" [level=4] [ref=e19]
+        - combobox [ref=e20]:
+          - option "Sort by Title" [selected]
+          - option "Sort by Author"
+          - option "Sort by Price"
+      - generic [ref=e21]:
+        - navigation [ref=e22]:
+          - list [ref=e23]:
+            - listitem [ref=e24]:
+              - button "Previous"
+            - listitem [ref=e25]:
+              - button "1" [ref=e26] [cursor=pointer]
+            - listitem [ref=e27]:
+              - button "Next"
+        - generic [ref=e28]:
+          - generic [ref=e29]: "Per page:"
+          - combobox [ref=e30]:
+            - option "5" [selected]
+            - option "10"
+            - option "15"
+            - option "20"
+    - generic [ref=e31]:
+      - heading "Your Cart" [level=5] [ref=e32]
+      - generic [ref=e33]:
+        - generic [ref=e34]: Cart Summary
+        - list [ref=e35]:
+          - listitem [ref=e36]:
+            - generic [ref=e37]: It's Your Ship x1
+            - generic [ref=e38]: $21.66
+        - generic [ref=e39]:
+          - paragraph [ref=e40]: "Total: $21.66"
+          - link "View Cart" [ref=e41] [cursor=pointer]:
+            - /url: /cart

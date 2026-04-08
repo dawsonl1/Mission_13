@@ -1,0 +1,125 @@
+- generic [ref=e2]:
+  - navigation [ref=e3]:
+    - generic [ref=e4]:
+      - link "Bookstore" [ref=e5] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e6]:
+        - link "Books" [ref=e7] [cursor=pointer]:
+          - /url: /
+        - link "Admin" [ref=e8] [cursor=pointer]:
+          - /url: /adminbooks
+      - link "Cart 1" [ref=e9] [cursor=pointer]:
+        - /url: /cart
+        - text: Cart
+        - generic [ref=e10]: "1"
+  - generic [ref=e12]:
+    - generic [ref=e13]:
+      - heading "Categories" [level=5] [ref=e14]
+      - generic [ref=e15]:
+        - button "All Categories" [ref=e16] [cursor=pointer]
+        - button "Action" [ref=e42] [cursor=pointer]
+        - button "Biography" [ref=e43] [cursor=pointer]
+        - button "Business" [ref=e44] [cursor=pointer]
+        - button "Christian Books" [ref=e45] [cursor=pointer]
+        - button "Classic" [ref=e46] [cursor=pointer]
+        - button "Health" [ref=e47] [cursor=pointer]
+        - button "Historical" [ref=e48] [cursor=pointer]
+        - button "Self-Help" [ref=e49] [cursor=pointer]
+        - button "Thrillers" [ref=e50] [cursor=pointer]
+    - generic [ref=e17]:
+      - generic [ref=e18]:
+        - heading "Books (16)" [level=4] [ref=e51]
+        - combobox [ref=e20]:
+          - option "Sort by Title" [selected]
+          - option "Sort by Author"
+          - option "Sort by Price"
+      - generic [ref=e52]:
+        - generic [ref=e56]:
+          - generic [ref=e57]:
+            - heading "American Ulysses" [level=5] [ref=e58]
+            - paragraph [ref=e59]: by Ronald C. White
+            - paragraph [ref=e60]: Random House | 864 pages
+            - paragraph [ref=e61]: "ISBN: 978-0812981254"
+            - generic [ref=e62]: Non-Fiction
+            - generic [ref=e63]: Biography
+          - generic [ref=e64]:
+            - paragraph [ref=e65]: $11.61
+            - button "Add to Cart" [ref=e66] [cursor=pointer]
+        - generic [ref=e70]:
+          - generic [ref=e71]:
+            - heading "Deep Work" [level=5] [ref=e72]
+            - paragraph [ref=e73]: by Cal Newport
+            - paragraph [ref=e74]: Grand Central Publishing | 304 pages
+            - paragraph [ref=e75]: "ISBN: 978-1455586691"
+            - generic [ref=e76]: Non-Fiction
+            - generic [ref=e77]: Self-Help
+          - generic [ref=e78]:
+            - paragraph [ref=e79]: $14.99
+            - button "Add to Cart" [ref=e80] [cursor=pointer]
+        - generic [ref=e84]:
+          - generic [ref=e85]:
+            - heading "It's Your Ship" [level=5] [ref=e86]
+            - paragraph [ref=e87]: by Michael Abrashoff
+            - paragraph [ref=e88]: Grand Central Publishing | 240 pages
+            - paragraph [ref=e89]: "ISBN: 978-1455523023"
+            - generic [ref=e90]: Non-Fiction
+            - generic [ref=e91]: Self-Help
+          - generic [ref=e92]:
+            - paragraph [ref=e93]: $21.66
+            - button "Add to Cart" [ref=e94] [cursor=pointer]
+        - generic [ref=e98]:
+          - generic [ref=e99]:
+            - heading "Les Miserables" [level=5] [ref=e100]
+            - paragraph [ref=e101]: by Victor Hugo
+            - paragraph [ref=e102]: Signet | 1488 pages
+            - paragraph [ref=e103]: "ISBN: 978-0451419439"
+            - generic [ref=e104]: Fiction
+            - generic [ref=e105]: Classic
+          - generic [ref=e106]:
+            - paragraph [ref=e107]: $9.95
+            - button "Add to Cart" [ref=e108] [cursor=pointer]
+        - generic [ref=e112]:
+          - generic [ref=e113]:
+            - heading "Sleep Smarter" [level=5] [ref=e114]
+            - paragraph [ref=e115]: by Shawn Stevenson
+            - paragraph [ref=e116]: Rodale Books | 288 pages
+            - paragraph [ref=e117]: "ISBN: 978-1623367398"
+            - generic [ref=e118]: Non-Fiction
+            - generic [ref=e119]: Health
+          - generic [ref=e120]:
+            - paragraph [ref=e121]: $17.59
+            - button "Add to Cart" [ref=e122] [cursor=pointer]
+      - generic [ref=e21]:
+        - navigation [ref=e22]:
+          - list [ref=e23]:
+            - listitem [ref=e24]:
+              - button "Previous"
+            - listitem [ref=e25]:
+              - button "1" [ref=e26] [cursor=pointer]
+            - listitem [ref=e123]:
+              - button "2" [ref=e124] [cursor=pointer]
+            - listitem [ref=e125]:
+              - button "3" [ref=e126] [cursor=pointer]
+            - listitem [ref=e127]:
+              - button "4" [ref=e128] [cursor=pointer]
+            - listitem [ref=e27]:
+              - button "Next" [ref=e129] [cursor=pointer]
+        - generic [ref=e28]:
+          - generic [ref=e29]: "Per page:"
+          - combobox [ref=e30]:
+            - option "5" [selected]
+            - option "10"
+            - option "15"
+            - option "20"
+    - generic [ref=e31]:
+      - heading "Your Cart" [level=5] [ref=e32]
+      - generic [ref=e33]:
+        - generic [ref=e34]: Cart Summary
+        - list [ref=e35]:
+          - listitem [ref=e36]:
+            - generic [ref=e37]: It's Your Ship x1
+            - generic [ref=e38]: $21.66
+        - generic [ref=e39]:
+          - paragraph [ref=e40]: "Total: $21.66"
+          - link "View Cart" [ref=e41] [cursor=pointer]:
+            - /url: /cart

@@ -1,0 +1,53 @@
+- generic [ref=e2]:
+  - navigation [ref=e3]:
+    - generic [ref=e4]:
+      - link "Bookstore" [ref=e5] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e6]:
+        - link "Books" [ref=e7] [cursor=pointer]:
+          - /url: /
+        - link "Admin" [ref=e8] [cursor=pointer]:
+          - /url: /adminbooks
+      - link "Cart 2" [active] [ref=e321] [cursor=pointer]:
+        - /url: /cart
+        - text: Cart
+        - generic [ref=e10]: "2"
+  - generic [ref=e329]:
+    - heading "Shopping Cart" [level=2] [ref=e330]
+    - table [ref=e331]:
+      - rowgroup [ref=e332]:
+        - row "Title Price Quantity Subtotal" [ref=e333]:
+          - columnheader "Title" [ref=e334]
+          - columnheader "Price" [ref=e335]
+          - columnheader "Quantity" [ref=e336]
+          - columnheader "Subtotal" [ref=e337]
+          - columnheader [ref=e338]
+      - rowgroup [ref=e339]:
+        - row "It's Your Ship by Michael Abrashoff $21.66 1 $21.66 Remove" [ref=e340]:
+          - cell "It's Your Ship by Michael Abrashoff" [ref=e341]:
+            - strong [ref=e342]: It's Your Ship
+            - generic [ref=e343]: by Michael Abrashoff
+          - cell "$21.66" [ref=e344]
+          - cell "1" [ref=e345]:
+            - spinbutton [ref=e346]: "1"
+          - cell "$21.66" [ref=e347]
+          - cell "Remove" [ref=e348]:
+            - button "Remove" [ref=e349] [cursor=pointer]
+        - row "Sycamore Row by John Grisham $15.03 1 $15.03 Remove" [ref=e350]:
+          - cell "Sycamore Row by John Grisham" [ref=e351]:
+            - strong [ref=e352]: Sycamore Row
+            - generic [ref=e353]: by John Grisham
+          - cell "$15.03" [ref=e354]
+          - cell "1" [ref=e355]:
+            - spinbutton [ref=e356]: "1"
+          - cell "$15.03" [ref=e357]
+          - cell "Remove" [ref=e358]:
+            - button "Remove" [ref=e359] [cursor=pointer]
+      - rowgroup [ref=e360]:
+        - 'row "Total: $36.69" [ref=e361]':
+          - cell "Total:" [ref=e362]
+          - cell "$36.69" [ref=e363]
+          - cell [ref=e364]
+    - generic [ref=e365]:
+      - button "Continue Shopping" [ref=e366] [cursor=pointer]
+      - button "Clear Cart" [ref=e367] [cursor=pointer]

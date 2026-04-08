@@ -1,0 +1,125 @@
+- generic [ref=e2]:
+  - navigation [ref=e3]:
+    - generic [ref=e4]:
+      - link "Bookstore" [ref=e5] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e6]:
+        - link "Books" [ref=e7] [cursor=pointer]:
+          - /url: /
+        - link "Admin" [ref=e8] [cursor=pointer]:
+          - /url: /adminbooks
+      - link "Cart 1" [ref=e9] [cursor=pointer]:
+        - /url: /cart
+        - text: Cart
+        - generic [ref=e10]: "1"
+  - generic [ref=e12]:
+    - generic [ref=e13]:
+      - heading "Categories" [level=5] [ref=e14]
+      - generic [ref=e15]:
+        - button "All Categories" [ref=e16] [cursor=pointer]
+        - button "Action" [ref=e42] [cursor=pointer]
+        - button "Biography" [ref=e43] [cursor=pointer]
+        - button "Business" [ref=e44] [cursor=pointer]
+        - button "Christian Books" [ref=e45] [cursor=pointer]
+        - button "Classic" [ref=e46] [cursor=pointer]
+        - button "Health" [ref=e47] [cursor=pointer]
+        - button "Historical" [ref=e48] [cursor=pointer]
+        - button "Self-Help" [ref=e49] [cursor=pointer]
+        - button "Thrillers" [ref=e50] [cursor=pointer]
+    - generic [ref=e17]:
+      - generic [ref=e18]:
+        - heading "Books (16)" [level=4] [ref=e187]
+        - combobox [ref=e20]:
+          - option "Sort by Title" [selected]
+          - option "Sort by Author"
+          - option "Sort by Price"
+      - generic [ref=e52]:
+        - generic [ref=e253]:
+          - generic [ref=e254]:
+            - heading "Sycamore Row" [level=5] [ref=e255]
+            - paragraph [ref=e256]: by John Grisham
+            - paragraph [ref=e257]: Batnam | 642 pages
+            - paragraph [ref=e258]: "ISBN: 978-0553393613"
+            - generic [ref=e259]: Fiction
+            - generic [ref=e260]: Thrillers
+          - generic [ref=e261]:
+            - paragraph [ref=e262]: $15.03
+            - button "Add to Cart" [ref=e263] [cursor=pointer]
+        - generic [ref=e267]:
+          - generic [ref=e268]:
+            - heading "Team of Rivals" [level=5] [ref=e269]
+            - paragraph [ref=e270]: by Doris Kearns Goodwin
+            - paragraph [ref=e271]: Simon & Schuster | 944 pages
+            - paragraph [ref=e272]: "ISBN: 978-0743270755"
+            - generic [ref=e273]: Non-Fiction
+            - generic [ref=e274]: Biography
+          - generic [ref=e275]:
+            - paragraph [ref=e276]: $14.58
+            - button "Add to Cart" [ref=e277] [cursor=pointer]
+        - generic [ref=e281]:
+          - generic [ref=e282]:
+            - heading "The Complete Personal Memoirs of Ulysses S. Grant" [level=5] [ref=e283]
+            - paragraph [ref=e284]: by Ulysses S. Grant
+            - paragraph [ref=e285]: CreateSpace Independent Publishing Platform | 552 pages
+            - paragraph [ref=e286]: "ISBN: 978-1481216043"
+            - generic [ref=e287]: Non-Fiction
+            - generic [ref=e288]: Biography
+          - generic [ref=e289]:
+            - paragraph [ref=e290]: $19.99
+            - button "Add to Cart" [ref=e291] [cursor=pointer]
+        - generic [ref=e295]:
+          - generic [ref=e296]:
+            - heading "The Great Train Robbery" [level=5] [ref=e297]
+            - paragraph [ref=e298]: by Michael Crichton
+            - paragraph [ref=e299]: Vintage | 288 pages
+            - paragraph [ref=e300]: "ISBN: 978-0804171281"
+            - generic [ref=e301]: Fiction
+            - generic [ref=e302]: Historical
+          - generic [ref=e303]:
+            - paragraph [ref=e304]: $13.33
+            - button "Add to Cart" [ref=e305] [cursor=pointer]
+        - generic [ref=e309]:
+          - generic [ref=e310]:
+            - heading "The Hunt for Red October" [level=5] [ref=e311]
+            - paragraph [ref=e312]: by Tom Clancy
+            - paragraph [ref=e313]: Berkley | 656 pages
+            - paragraph [ref=e314]: "ISBN: 978-0440001027"
+            - generic [ref=e315]: Fiction
+            - generic [ref=e316]: Action
+          - generic [ref=e317]:
+            - paragraph [ref=e318]: $9.99
+            - button "Add to Cart" [ref=e319] [cursor=pointer]
+      - generic [ref=e21]:
+        - navigation [ref=e22]:
+          - list [ref=e23]:
+            - listitem [ref=e24]:
+              - button "Previous" [ref=e320] [cursor=pointer]
+            - listitem [ref=e25]:
+              - button "1" [ref=e26] [cursor=pointer]
+            - listitem [ref=e244]:
+              - button "2" [active] [ref=e245] [cursor=pointer]
+            - listitem [ref=e246]:
+              - button "3" [ref=e247] [cursor=pointer]
+            - listitem [ref=e248]:
+              - button "4" [ref=e249] [cursor=pointer]
+            - listitem [ref=e27]:
+              - button "Next" [ref=e129] [cursor=pointer]
+        - generic [ref=e28]:
+          - generic [ref=e29]: "Per page:"
+          - combobox [ref=e30]:
+            - option "5" [selected]
+            - option "10"
+            - option "15"
+            - option "20"
+    - generic [ref=e31]:
+      - heading "Your Cart" [level=5] [ref=e32]
+      - generic [ref=e33]:
+        - generic [ref=e34]: Cart Summary
+        - list [ref=e35]:
+          - listitem [ref=e36]:
+            - generic [ref=e37]: It's Your Ship x1
+            - generic [ref=e38]: $21.66
+        - generic [ref=e39]:
+          - paragraph [ref=e40]: "Total: $21.66"
+          - link "View Cart" [ref=e41] [cursor=pointer]:
+            - /url: /cart

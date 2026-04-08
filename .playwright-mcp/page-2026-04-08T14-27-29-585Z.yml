@@ -1,0 +1,186 @@
+- generic [ref=e2]:
+  - navigation [ref=e3]:
+    - generic [ref=e4]:
+      - link "Bookstore" [ref=e5] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e6]:
+        - link "Books" [ref=e7] [cursor=pointer]:
+          - /url: /
+        - link "Admin" [ref=e8] [cursor=pointer]:
+          - /url: /adminbooks
+      - link "Cart 2" [ref=e321] [cursor=pointer]:
+        - /url: /cart
+        - text: Cart
+        - generic [ref=e10]: "2"
+  - generic [ref=e490]:
+    - generic [ref=e491]:
+      - heading "Manage Books" [level=2] [ref=e492]
+      - button "+ Add Book" [active] [ref=e493] [cursor=pointer]
+    - generic [ref=e631]:
+      - generic [ref=e632]: Add New Book
+      - generic [ref=e634]:
+        - generic [ref=e635]:
+          - generic [ref=e636]:
+            - generic [ref=e637]: Title
+            - textbox [ref=e638]
+          - generic [ref=e639]:
+            - generic [ref=e640]: Author
+            - textbox [ref=e641]
+          - generic [ref=e642]:
+            - generic [ref=e643]: Publisher
+            - textbox [ref=e644]
+          - generic [ref=e645]:
+            - generic [ref=e646]: ISBN
+            - textbox [ref=e647]
+          - generic [ref=e648]:
+            - generic [ref=e649]: Classification
+            - textbox [ref=e650]
+          - generic [ref=e651]:
+            - generic [ref=e652]: Category
+            - textbox [ref=e653]
+          - generic [ref=e654]:
+            - generic [ref=e655]: Pages
+            - spinbutton [ref=e656]: "0"
+          - generic [ref=e657]:
+            - generic [ref=e658]: Price
+            - spinbutton [ref=e659]: "0"
+        - generic [ref=e660]:
+          - button "Add Book" [ref=e661] [cursor=pointer]
+          - button "Cancel" [ref=e662] [cursor=pointer]
+    - table [ref=e494]:
+      - rowgroup [ref=e495]:
+        - row "Title Author Category Price Actions" [ref=e496]:
+          - columnheader "Title" [ref=e497]
+          - columnheader "Author" [ref=e498]
+          - columnheader "Category" [ref=e499]
+          - columnheader "Price" [ref=e500]
+          - columnheader "Actions" [ref=e501]
+      - rowgroup [ref=e502]:
+        - row "American Ulysses Ronald C. White Biography $11.61 Edit Delete" [ref=e503]:
+          - cell "American Ulysses" [ref=e504]
+          - cell "Ronald C. White" [ref=e505]
+          - cell "Biography" [ref=e506]
+          - cell "$11.61" [ref=e507]
+          - cell "Edit Delete" [ref=e508]:
+            - button "Edit" [ref=e509] [cursor=pointer]
+            - button "Delete" [ref=e510] [cursor=pointer]
+        - row "Deep Work Cal Newport Self-Help $14.99 Edit Delete" [ref=e511]:
+          - cell "Deep Work" [ref=e512]
+          - cell "Cal Newport" [ref=e513]
+          - cell "Self-Help" [ref=e514]
+          - cell "$14.99" [ref=e515]
+          - cell "Edit Delete" [ref=e516]:
+            - button "Edit" [ref=e517] [cursor=pointer]
+            - button "Delete" [ref=e518] [cursor=pointer]
+        - row "It's Your Ship Michael Abrashoff Self-Help $21.66 Edit Delete" [ref=e519]:
+          - cell "It's Your Ship" [ref=e520]
+          - cell "Michael Abrashoff" [ref=e521]
+          - cell "Self-Help" [ref=e522]
+          - cell "$21.66" [ref=e523]
+          - cell "Edit Delete" [ref=e524]:
+            - button "Edit" [ref=e525] [cursor=pointer]
+            - button "Delete" [ref=e526] [cursor=pointer]
+        - row "Les Miserables Victor Hugo Classic $9.95 Edit Delete" [ref=e527]:
+          - cell "Les Miserables" [ref=e528]
+          - cell "Victor Hugo" [ref=e529]
+          - cell "Classic" [ref=e530]
+          - cell "$9.95" [ref=e531]
+          - cell "Edit Delete" [ref=e532]:
+            - button "Edit" [ref=e533] [cursor=pointer]
+            - button "Delete" [ref=e534] [cursor=pointer]
+        - row "Sleep Smarter Shawn Stevenson Health $17.59 Edit Delete" [ref=e535]:
+          - cell "Sleep Smarter" [ref=e536]
+          - cell "Shawn Stevenson" [ref=e537]
+          - cell "Health" [ref=e538]
+          - cell "$17.59" [ref=e539]
+          - cell "Edit Delete" [ref=e540]:
+            - button "Edit" [ref=e541] [cursor=pointer]
+            - button "Delete" [ref=e542] [cursor=pointer]
+        - row "Sycamore Row John Grisham Thrillers $15.03 Edit Delete" [ref=e543]:
+          - cell "Sycamore Row" [ref=e544]
+          - cell "John Grisham" [ref=e545]
+          - cell "Thrillers" [ref=e546]
+          - cell "$15.03" [ref=e547]
+          - cell "Edit Delete" [ref=e548]:
+            - button "Edit" [ref=e549] [cursor=pointer]
+            - button "Delete" [ref=e550] [cursor=pointer]
+        - row "Team of Rivals Doris Kearns Goodwin Biography $14.58 Edit Delete" [ref=e551]:
+          - cell "Team of Rivals" [ref=e552]
+          - cell "Doris Kearns Goodwin" [ref=e553]
+          - cell "Biography" [ref=e554]
+          - cell "$14.58" [ref=e555]
+          - cell "Edit Delete" [ref=e556]:
+            - button "Edit" [ref=e557] [cursor=pointer]
+            - button "Delete" [ref=e558] [cursor=pointer]
+        - row "The Complete Personal Memoirs of Ulysses S. Grant Ulysses S. Grant Biography $19.99 Edit Delete" [ref=e559]:
+          - cell "The Complete Personal Memoirs of Ulysses S. Grant" [ref=e560]
+          - cell "Ulysses S. Grant" [ref=e561]
+          - cell "Biography" [ref=e562]
+          - cell "$19.99" [ref=e563]
+          - cell "Edit Delete" [ref=e564]:
+            - button "Edit" [ref=e565] [cursor=pointer]
+            - button "Delete" [ref=e566] [cursor=pointer]
+        - row "The Great Train Robbery Michael Crichton Historical $13.33 Edit Delete" [ref=e567]:
+          - cell "The Great Train Robbery" [ref=e568]
+          - cell "Michael Crichton" [ref=e569]
+          - cell "Historical" [ref=e570]
+          - cell "$13.33" [ref=e571]
+          - cell "Edit Delete" [ref=e572]:
+            - button "Edit" [ref=e573] [cursor=pointer]
+            - button "Delete" [ref=e574] [cursor=pointer]
+        - row "The Hunt for Red October Tom Clancy Action $9.99 Edit Delete" [ref=e575]:
+          - cell "The Hunt for Red October" [ref=e576]
+          - cell "Tom Clancy" [ref=e577]
+          - cell "Action" [ref=e578]
+          - cell "$9.99" [ref=e579]
+          - cell "Edit Delete" [ref=e580]:
+            - button "Edit" [ref=e581] [cursor=pointer]
+            - button "Delete" [ref=e582] [cursor=pointer]
+        - row "The Screwtape Letters C.S. Lewis Christian Books $10.27 Edit Delete" [ref=e583]:
+          - cell "The Screwtape Letters" [ref=e584]
+          - cell "C.S. Lewis" [ref=e585]
+          - cell "Christian Books" [ref=e586]
+          - cell "$10.27" [ref=e587]
+          - cell "Edit Delete" [ref=e588]:
+            - button "Edit" [ref=e589] [cursor=pointer]
+            - button "Delete" [ref=e590] [cursor=pointer]
+        - row "The Snowball Alice Schroeder Biography $21.54 Edit Delete" [ref=e591]:
+          - cell "The Snowball" [ref=e592]
+          - cell "Alice Schroeder" [ref=e593]
+          - cell "Biography" [ref=e594]
+          - cell "$21.54" [ref=e595]
+          - cell "Edit Delete" [ref=e596]:
+            - button "Edit" [ref=e597] [cursor=pointer]
+            - button "Delete" [ref=e598] [cursor=pointer]
+        - row "The Virgin Way Richard Branson Business $29.16 Edit Delete" [ref=e599]:
+          - cell "The Virgin Way" [ref=e600]
+          - cell "Richard Branson" [ref=e601]
+          - cell "Business" [ref=e602]
+          - cell "$29.16" [ref=e603]
+          - cell "Edit Delete" [ref=e604]:
+            - button "Edit" [ref=e605] [cursor=pointer]
+            - button "Delete" [ref=e606] [cursor=pointer]
+        - row "The Way I Heard It Mike Rowe Historical $12.30 Edit Delete" [ref=e607]:
+          - cell "The Way I Heard It" [ref=e608]
+          - cell "Mike Rowe" [ref=e609]
+          - cell "Historical" [ref=e610]
+          - cell "$12.30" [ref=e611]
+          - cell "Edit Delete" [ref=e612]:
+            - button "Edit" [ref=e613] [cursor=pointer]
+            - button "Delete" [ref=e614] [cursor=pointer]
+        - row "Titan Ron Chernow Biography $16.59 Edit Delete" [ref=e615]:
+          - cell "Titan" [ref=e616]
+          - cell "Ron Chernow" [ref=e617]
+          - cell "Biography" [ref=e618]
+          - cell "$16.59" [ref=e619]
+          - cell "Edit Delete" [ref=e620]:
+            - button "Edit" [ref=e621] [cursor=pointer]
+            - button "Delete" [ref=e622] [cursor=pointer]
+        - row "Unbroken Laura Hillenbrand Historical $13.33 Edit Delete" [ref=e623]:
+          - cell "Unbroken" [ref=e624]
+          - cell "Laura Hillenbrand" [ref=e625]
+          - cell "Historical" [ref=e626]
+          - cell "$13.33" [ref=e627]
+          - cell "Edit Delete" [ref=e628]:
+            - button "Edit" [ref=e629] [cursor=pointer]
+            - button "Delete" [ref=e630] [cursor=pointer]
