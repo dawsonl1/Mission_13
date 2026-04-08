@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { Book } from '../types/Book';
+import type { Book } from '../types/Book';
 import { fetchBooks } from '../api/BookAPI';
 import { useCart } from '../context/CartContext';
 import CategoryFilter from './CategoryFilter';

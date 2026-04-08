@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Book } from '../types/Book';
+import type { Book } from '../types/Book';
 import { fetchBooks, deleteBook, createBook, updateBook } from '../api/BookAPI';
 import EditBookForm from './EditBookForm';
 

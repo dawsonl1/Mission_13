@@ -1,5 +1,5 @@
-import { createContext, useContext, useReducer, useEffect, ReactNode } from 'react';
-import { Book, CartItem } from '../types/Book';
+import { createContext, useContext, useReducer, useEffect, type ReactNode } from 'react';
+import type { Book, CartItem } from '../types/Book';
 
 interface CartState {
   items: CartItem[];

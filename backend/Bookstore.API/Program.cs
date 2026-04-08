@@ -13,7 +13,9 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowFrontend", policy =>
     {
-        policy.WithOrigins("http://localhost:5173")
+        policy.WithOrigins(
+                "http://localhost:5173",
+                "https://jolly-plant-050617210.1.azurestaticapps.net")
             .AllowAnyHeader()
             .AllowAnyMethod();
     });
