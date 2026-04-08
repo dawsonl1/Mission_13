@@ -15,7 +15,9 @@ builder.Services.AddCors(options =>
     {
         policy.WithOrigins(
                 "http://localhost:5173",
-                "https://jolly-plant-050617210.1.azurestaticapps.net")
+                "https://jolly-plant-050617210.1.azurestaticapps.net",
+                "https://dawsonsprojects.com",
+                "https://www.dawsonsprojects.com")
             .AllowAnyHeader()
             .AllowAnyMethod();
     });
